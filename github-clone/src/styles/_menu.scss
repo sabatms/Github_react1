@@ -1,0 +1,55 @@
+@import "./mainRight";
+
+.menu{
+    background-color: var(--btn-color);
+    position: absolute;
+    top: 44px;
+    right: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--line-color);
+    font-size: 14px;
+    width: 180px;
+
+    .menuContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            cursor: pointer;
+            width: 100%;
+            padding: 6px 16px 6px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+            &:last-child{
+                margin-bottom: 8px;
+                padding: 6px 16px 6px;
+            }
+
+            &:hover{
+                background-color: darkgray;
+            }
+        }
+
+        .lineThree{
+            @include lines();
+            margin: 8px 0;
+            
+        }
+
+        .menuStatus{
+            input{
+                background-color: transparent;
+                border: 1px solid var(--line-color);
+                border-radius: 4px;
+                padding: 8px;
+                width: 150px;
+            }
+        }
+    }
+}

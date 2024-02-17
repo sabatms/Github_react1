@@ -1,0 +1,76 @@
+.overview{
+    width: 870px;
+
+    .overviewDescription{
+        border: 0.4px solid var(--border-color);
+        padding: 10px;
+        height: 300px;
+        border-radius: 8px;
+
+        & > * {
+            margin: 20px;
+        }
+        p{
+            font-size: 14px;
+        }
+
+        h1{
+            font-size: 24px;
+        }
+
+        h2{
+            font-size: 24px;
+        }
+
+        .line {
+            @include lines()
+        }
+    }
+
+    .repositories{
+        width: 100%;
+
+        h2{
+            margin: 30px 0 10px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .repositoriesContainer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .repositoriesBox{
+                width: 410px;
+                height: 100px;
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                margin-bottom: 20px;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .repositoriesTop{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h3{
+                        color: var(--text-blue-color);
+                        font-size: 14px;
+                    }
+
+                    p{
+                        border-radius: 10px;
+                        border: 1px solid var(--border-color);
+                        padding: 2px 8px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

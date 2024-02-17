@@ -1,0 +1,145 @@
+.mainLeftContainer {
+    width: 340px;
+    background-color: var(--second-color);
+    height: 560px;
+    overflow: hidden;
+    border-right: 1px solid var(--border-color);
+
+    .mainLeft {
+        max-width: 260px;
+        width: 100%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        scrollbar-color: transparent;
+        height: 100%;
+        padding: 1px;
+
+        .line {
+            padding: 1px;
+            background-color: var(--line-color);
+            width: 100%;
+        }
+
+        .mainLeftName {
+            display: flex;
+            gap: 4px;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+
+         img {
+            width: 20px;
+            object-fit: contain;
+            border-radius: 50%;
+         }
+
+         h2{
+            font-size: 16px;
+            color: var(--grey-color);
+         }
+        }
+
+        .mainLeftLists {
+            display: flex;
+            flex-direction: column;
+            .item {
+                display: flex;
+                gap: 8px;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 6px 0;
+
+                img {
+                    width: 18px;
+                    object-fit: contain;
+                    border-radius: 50%;
+                }
+
+                h2 {
+                font-size: 14px;
+                color: var(--grey-color);
+                }
+            }
+
+           a {
+            text-decoration: none;
+            color: var(--grey-two-color);
+            font-size: 12px;
+            margin: 14px 0 20px;
+           } 
+        }
+
+        .recentRepo {
+            width: 100%;
+            margin: 24px auto 8px;
+
+            .inputBox {
+                padding: 2px;
+            }
+
+            .recentRepos {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h2 {
+                    font-size: 14px;
+                    color: var(--grey-color);
+                }
+
+                button {
+                    cursor: pointer;
+                    width: 64px;
+                    height: 28px;
+                    border: none;
+                    background-color: #2a913d;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border-radius: 6px;
+                }
+                button:hover{
+                    background-color: #2ea043;
+                }
+            }
+
+            input{
+                width: 100%;
+                margin: 10px auto;
+                height: 34px;
+                background-color: #0c1117;
+                font-size: 14px;
+                padding-left: 10px;
+                font-weight: bold;
+                border: 1px solid var(--line-color);
+                border-radius: 4px;
+            }
+
+            .inputBoxTwo {
+                margin-bottom: 80px;
+                padding: 2px;
+            }
+
+            p {
+                margin: 12px auto;
+                color: var(--grey-two-color);
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+.mainLeft::-webkit-scrollbar {
+    display: none;
+}
+
+
+.mainLeft {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

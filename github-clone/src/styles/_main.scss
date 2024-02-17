@@ -1,0 +1,7 @@
+@import"../styles/mainLeft";
+@import"../styles/mainRight";
+
+.main{
+    display: flex;
+    background-color: var(--first-color);
+}
